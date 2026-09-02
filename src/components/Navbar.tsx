@@ -64,7 +64,7 @@ export default function Navbar() {
           {/* Official College Logo Image - Clean, Complete, Unframed, Prominent */}
           <div className="shrink-0 flex items-center justify-center group-hover:scale-105 transition-transform py-0.5">
             <img
-              src="/college-logo.png"
+              src="/college-logo.jpg"
               alt="Sir C. R. Reddy College of Engineering Official Crest Logo"
               className="h-12 sm:h-16 md:h-20 w-auto max-w-[180px] sm:max-w-[240px] object-contain drop-shadow-sm"
             />
