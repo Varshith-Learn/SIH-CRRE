@@ -14,35 +14,37 @@ const nextConfig = {
       },
     ],
   },
-  ...(isExport ? {} : {
-    async headers() {
-      return [
-        {
-          source: '/:path*',
-          headers: [
-            {
-              key: 'Cache-Control',
-              value: 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
-            },
-          ],
-        },
-      ];
-    },
-    async redirects() {
-      return [
-        {
-          source: '/problems',
-          destination: 'https://sih.gov.in/sih2026PS',
-          permanent: false,
-        },
-        {
-          source: '/problem-statements',
-          destination: 'https://sih.gov.in/sih2026PS',
-          permanent: false,
-        },
-      ];
-    },
-  })
 };
+
+if (!isExport) {
+  nextConfig.headers = async () => {
+    return [
+      {
+        source: '/:path*',
+        headers: [
+          {
+            key: 'Cache-Control',
+            value: 'no-store, no-cache, must-revalidate, proxy-revalidate, max-age=0',
+          },
+        ],
+      },
+    ];
+  };
+
+  nextConfig.redirects = async () => {
+    return [
+      {
+        source: '/problems',
+        destination: 'https://sih.gov.in/sih2026PS',
+        permanent: false,
+      },
+      {
+        source: '/problem-statements',
+        destination: 'https://sih.gov.in/sih2026PS',
+        permanent: false,
+      },
+    ];
+  };
+}
 
 module.exports = nextConfig;
