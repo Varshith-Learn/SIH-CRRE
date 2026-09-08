@@ -161,7 +161,7 @@ export default function Hero() {
   <img
     src="/sih-logo.png"
     alt="Smart India Hackathon 2026 Official Logo"
-    className="max-h-56 sm:max-h-64 w-auto object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] hover:scale-105 transition-transform"
+    className="max-h-72 sm:max-h-80 md:max-h-96 w-auto object-contain rounded-3xl filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] hover:scale-105 transition-transform"
   />
 </div>
 
