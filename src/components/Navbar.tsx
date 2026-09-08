@@ -23,15 +23,15 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const navLinks = [
-    { name: 'HOME', href: '/' },
-    { name: 'ABOUT SIH', href: '/about' },
-    { name: 'OUR SIH JOURNEY', href: '/#journey' },
-    { name: 'ALUMNI', href: '/alumni' },
-    { name: 'RESULTS', href: 'https://sih-crre.vercel.app/register' },
-    { name: 'GUIDELINES', href: '/guidelines' },
-    { name: 'REGISTER', href: 'https://sih-crre.vercel.app/register' },
-  ];
+const navLinks = [
+  { name: 'HOME', href: '/' },
+  { name: 'ABOUT SIH', href: '/about' },
+  { name: 'OUR SIH JOURNEY', href: '/#journey' },
+  { name: 'ALUMNI', href: '/alumni' },
+  { name: 'RESULTS', href: '/results' },
+  { name: 'GUIDELINES', href: '/guidelines' },
+  { name: 'REGISTER', href: 'https://sih-crre.vercel.app/register' },
+];
 
   const isActive = (path: string) => {
     if (path === '/' && pathname === '/') return true;
