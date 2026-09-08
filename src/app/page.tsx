@@ -65,8 +65,8 @@ export default function HomePage() {
             {/* ==================== NEON VIDEO FRAME ==================== */}
             <div className="relative p-[2px] rounded-[28px] bg-gradient-to-r from-[#c59b27] via-cyan-400 to-[#c59b27] animate-neon-border">
 
-              {/* Video */}
-              <div className="relative w-full h-[40vh] min-h-[260px] max-h-[520px] overflow-hidden rounded-[26px] bg-black shadow-2xl">
+              {/* Video - 90% of viewport height */}
+              <div className="relative w-full h-[90vh] min-h-[500px] overflow-hidden rounded-[26px] bg-black shadow-2xl">
 
                 <iframe
                   className="absolute inset-0 w-full h-full"
