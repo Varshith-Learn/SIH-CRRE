@@ -133,3 +133,29 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background: #64748b;
 }
+
+
+/* YT Video */
+@keyframes neon-border {
+  0% {
+    filter:
+      drop-shadow(0 0 4px rgba(197, 155, 39, 0.35))
+      drop-shadow(0 0 8px rgba(34, 211, 238, 0.15));
+  }
+
+  50% {
+    filter:
+      drop-shadow(0 0 10px rgba(197, 155, 39, 0.75))
+      drop-shadow(0 0 22px rgba(34, 211, 238, 0.45));
+  }
+
+  100% {
+    filter:
+      drop-shadow(0 0 4px rgba(197, 155, 39, 0.35))
+      drop-shadow(0 0 8px rgba(34, 211, 238, 0.15));
+  }
+}
+
+.animate-neon-border {
+  animation: neon-border 3s ease-in-out infinite;
+}
