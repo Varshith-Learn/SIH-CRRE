@@ -157,13 +157,13 @@ export default function Hero() {
                 <span>OFFICIAL SIH 2026 EMBLEM</span>
               </div>
               
-              <div className="w-full flex items-center justify-center my-4 pt-6 animate-float">
-                <img
-                  src="/sih-logo.png"
-                  alt="Smart India Hackathon 2026 Official Logo"
-                  className="max-h-56 sm:max-h-64 w-auto object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] hover:scale-105 transition-transform"
-                />
-              </div>
+             <div className="w-full flex items-center justify-center my-4 pt-6 animate-float">
+  <img
+    src="/sih-logo.png"
+    alt="Smart India Hackathon 2026 Official Logo"
+    className="max-h-56 sm:max-h-64 w-auto object-contain filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] hover:scale-105 transition-transform"
+  />
+</div>
 
               <div className="text-center text-[11px] text-slate-300 font-serif font-bold tracking-wide mt-2">
                 Sir C.R. Reddy College of Engineering (Autonomous)
