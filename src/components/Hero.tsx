@@ -159,6 +159,14 @@ export default function Hero() {
               
              <div className="w-full flex items-center justify-center my-4 pt-6 animate-float">
   <img
+    style={{
+      maxHeight: "384px",
+      width: "auto",
+      objectFit: "contain",
+      borderRadius: "32px",
+      filter: "drop-shadow(0 12px 24px rgba(0, 0, 0, 0.6))",
+      transition: "transform 0.3s ease",
+    }}
     src="/sih-logo.png"
     alt="Smart India Hackathon 2026 Official Logo"
     className="max-h-72 sm:max-h-80 md:max-h-96 w-auto object-contain rounded-3xl filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.6)] hover:scale-105 transition-transform"
