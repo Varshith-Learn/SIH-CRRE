@@ -30,7 +30,7 @@ export default function Navbar() {
     { name: 'ALUMNI', href: '/alumni' },
     { name: 'RESULTS', href: '/results' },
     { name: 'GUIDELINES', href: '/guidelines' },
-    { name: 'REGISTER', href: '/register' },
+    { name: 'REGISTER', href: 'https://sih-crre.vercel.app/register' },
   ];
 
   const isActive = (path: string) => {
