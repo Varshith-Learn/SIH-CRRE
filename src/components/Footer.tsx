@@ -13,12 +13,13 @@ export default function Footer() {
         <div className="space-y-4">
           <div className="flex items-center gap-3">
             <div className="w-11 h-11 rounded-full bg-slate-900 flex items-center justify-center border border-college-gold shrink-0 overflow-hidden">
-              <img
+             <img
   src="/college-logo.jpg"
   alt="Sir C. R. Reddy College of Engineering Official Crest"
-  className="w-full h-full object-contain rounded-full"
+  className="w-full h-full object-cover rounded-full"
   style={{
-    padding: "8px",
+    padding: "2px",
+    transform: "scale(1.15)",
     transition: "transform 0.3s ease",
   }}
 />
