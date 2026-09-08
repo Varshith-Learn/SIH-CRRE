@@ -28,7 +28,7 @@ export default function Navbar() {
     { name: 'ABOUT SIH', href: '/about' },
     { name: 'OUR SIH JOURNEY', href: '/#journey' },
     { name: 'ALUMNI', href: '/alumni' },
-    { name: 'RESULTS', href: '/results' },
+    { name: 'RESULTS', href: 'https://sih-crre.vercel.app/register' },
     { name: 'GUIDELINES', href: '/guidelines' },
     { name: 'REGISTER', href: 'https://sih-crre.vercel.app/register' },
   ];
@@ -154,8 +154,8 @@ export default function Navbar() {
             );
           })}
           <div className="pt-3 border-t border-slate-700 mt-3">
-            <Link
-              href="/register"
+           <Link
+  href="https://sih-crre.vercel.app/register"
               onClick={() => setIsMobileMenuOpen(false)}
               className="flex items-center justify-center gap-2 bg-gradient-to-r from-college-gold via-amber-500 to-college-gold text-college-dark font-extrabold text-xs py-3 px-4 rounded w-full tracking-wider shadow-md"
             >
