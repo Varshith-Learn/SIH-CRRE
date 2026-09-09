@@ -22,10 +22,25 @@ export default function HomePage() {
       <main className="flex-grow">
         <Hero />
 
-        {/* ==================== REGISTRATION TUTORIAL ==================== */}
-        <section className="relative w-full py-16 sm:py-20 overflow-hidden bg-gradient-to-b from-[#071a33] via-[#0a2340] to-[#071a33]">
+        {/* =========================================================
+            REGISTRATION TUTORIAL
+            ========================================================= */}
+        <section
+          className="
+            relative
+            w-full
+            py-12
+            sm:py-16
+            lg:py-20
+            overflow-hidden
+            bg-gradient-to-b
+            from-[#071a33]
+            via-[#0a2340]
+            to-[#071a33]
+          "
+        >
 
-          {/* Background Grid */}
+          {/* ==================== BACKGROUND GRID ==================== */}
           <div
             className="absolute inset-0 pointer-events-none opacity-10"
             style={{
@@ -35,41 +50,173 @@ export default function HomePage() {
             }}
           />
 
-          {/* Ambient Glow */}
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[500px] h-[300px] bg-cyan-400/10 blur-3xl rounded-full pointer-events-none" />
+          {/* ==================== AMBIENT GLOW ==================== */}
+          <div
+            className="
+              absolute
+              top-1/2
+              left-1/2
+              -translate-x-1/2
+              -translate-y-1/2
+              w-[300px]
+              h-[220px]
+              sm:w-[500px]
+              sm:h-[300px]
+              bg-cyan-400/10
+              blur-3xl
+              rounded-full
+              pointer-events-none
+            "
+          />
 
-          {/* 80% Width / 10% Left + 10% Right */}
-          <div className="relative z-10 w-[80%] mx-auto">
+          {/* =====================================================
+              RESPONSIVE CONTENT WIDTH
+              Mobile: 94%
+              Tablet: 90%
+              Desktop: 80%
+              ===================================================== */}
+          <div
+            className="
+              relative
+              z-10
+              w-[94%]
+              sm:w-[90%]
+              lg:w-[80%]
+              mx-auto
+            "
+          >
 
-            {/* Section Heading */}
-            <div className="text-center mb-8 sm:mb-10">
+            {/* ==================== SECTION HEADING ==================== */}
+            <div className="text-center mb-7 sm:mb-9 lg:mb-10">
 
               {/* Registration Guide Badge */}
-              <div className="inline-flex items-center gap-2 px-4 py-2 mb-4 rounded-full bg-white/5 border border-[#c59b27]/50 text-[#d4af37] font-mono text-xs sm:text-sm font-semibold tracking-wider">
+              <div
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+                  px-3
+                  py-2
+                  sm:px-4
+                  mb-4
+                  rounded-full
+                  bg-white/5
+                  border
+                  border-[#c59b27]/50
+                  text-[#d4af37]
+                  font-mono
+                  text-[10px]
+                  sm:text-xs
+                  md:text-sm
+                  font-semibold
+                  tracking-wider
+                "
+              >
                 <PlayCircle className="w-4 h-4" />
                 REGISTRATION GUIDE
               </div>
 
               {/* Title */}
-              <h2 className="font-serif font-extrabold text-2xl sm:text-3xl md:text-4xl text-white tracking-tight">
+              <h2
+                className="
+                  font-serif
+                  font-extrabold
+                  text-xl
+                  sm:text-2xl
+                  md:text-3xl
+                  lg:text-4xl
+                  leading-tight
+                  text-white
+                  tracking-tight
+                  max-w-5xl
+                  mx-auto
+                "
+              >
                 How to Register to SIH Internal Hackathon 2026 of CRRE
               </h2>
 
               {/* Description */}
-              <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl mx-auto">
+              <p
+                className="
+                  mt-3
+                  text-xs
+                  sm:text-sm
+                  md:text-base
+                  text-slate-300
+                  max-w-2xl
+                  mx-auto
+                  leading-relaxed
+                "
+              >
                 Watch this step-by-step video to learn how to complete your
                 team registration successfully.
               </p>
             </div>
 
-            {/* ==================== NEON VIDEO FRAME ==================== */}
-            <div className="relative p-[2px] rounded-[28px] bg-gradient-to-r from-[#c59b27] via-cyan-400 to-[#c59b27] animate-neon-border">
+            {/* =====================================================
+                NEON VIDEO FRAME
+                ===================================================== */}
+            <div
+              className="
+                relative
+                p-[2px]
+                rounded-[22px]
+                sm:rounded-[26px]
+                lg:rounded-[28px]
+                bg-gradient-to-r
+                from-[#c59b27]
+                via-cyan-400
+                to-[#c59b27]
+                animate-neon-border
+              "
+            >
 
-              {/* Video - 90% of viewport height */}
-              <div className="relative w-full h-[90vh] min-h-[500px] overflow-hidden rounded-[26px] bg-black shadow-2xl">
+              {/* =================================================
+                  RESPONSIVE VIDEO CONTAINER
 
+                  Mobile  → 45vh
+                  Small   → 55vh
+                  Tablet  → 70vh
+                  Desktop → 90vh
+                  ================================================= */}
+              <div
+                className="
+                  relative
+                  w-full
+
+                  h-[45vh]
+                  min-h-[240px]
+                  max-h-[420px]
+
+                  sm:h-[55vh]
+                  sm:min-h-[320px]
+                  sm:max-h-[600px]
+
+                  md:h-[70vh]
+                  md:min-h-[400px]
+                  md:max-h-[750px]
+
+                  lg:h-[90vh]
+                  lg:min-h-[600px]
+
+                  overflow-hidden
+                  rounded-[20px]
+                  sm:rounded-[24px]
+                  lg:rounded-[26px]
+                  bg-black
+                  shadow-2xl
+                "
+              >
+
+                {/* YouTube Video */}
                 <iframe
-                  className="absolute inset-0 w-full h-full"
+                  className="
+                    absolute
+                    inset-0
+                    w-full
+                    h-full
+                    border-0
+                  "
                   src="https://www.youtube.com/embed/WvfxDYqpUjA"
                   title="How to Register to SIH Internal Hackathon 2026 of CRRE"
                   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -79,10 +226,32 @@ export default function HomePage() {
               </div>
             </div>
 
-            {/* Bottom Caption */}
-            <div className="flex justify-center mt-5">
-              <div className="inline-flex items-center gap-2 text-xs sm:text-sm text-slate-400">
-                <span className="w-2 h-2 rounded-full bg-[#d4af37] animate-pulse" />
+            {/* ==================== BOTTOM CAPTION ==================== */}
+            <div className="flex justify-center mt-4 sm:mt-5 px-2">
+              <div
+                className="
+                  inline-flex
+                  items-center
+                  gap-2
+                  text-[10px]
+                  sm:text-xs
+                  md:text-sm
+                  text-slate-400
+                  text-center
+                  leading-relaxed
+                "
+              >
+                <span
+                  className="
+                    flex-shrink-0
+                    w-2
+                    h-2
+                    rounded-full
+                    bg-[#d4af37]
+                    animate-pulse
+                  "
+                />
+
                 Follow the steps carefully before submitting your registration.
               </div>
             </div>
@@ -90,15 +259,28 @@ export default function HomePage() {
           </div>
         </section>
 
+        {/* =========================================================
+            EXISTING WEBSITE SECTIONS
+            ========================================================= */}
+
         <AnnouncementBar />
+
         <CollegeSlideshow />
+
         <AboutSection />
+
         <PrizeMoneySection />
+
         <JourneySection />
+
         <AlumniCarousel />
+
         <WhyParticipate />
+
         <Timeline />
+
         <ImportantDates />
+
       </main>
 
       <Footer />
