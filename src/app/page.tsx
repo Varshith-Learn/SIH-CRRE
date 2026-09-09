@@ -20,6 +20,8 @@ export default function HomePage() {
       <Navbar />
 
       <main className="flex-grow">
+
+        {/* ==================== HERO ==================== */}
         <Hero />
 
         {/* =========================================================
@@ -71,9 +73,9 @@ export default function HomePage() {
 
           {/* =====================================================
               RESPONSIVE CONTENT WIDTH
-              Mobile: 94%
-              Tablet: 90%
-              Desktop: 80%
+              Mobile  → 94%
+              Tablet  → 90%
+              Desktop → 80%
               ===================================================== */}
           <div
             className="
@@ -172,33 +174,21 @@ export default function HomePage() {
             >
 
               {/* =================================================
-                  RESPONSIVE VIDEO CONTAINER
+                  TRUE 16:9 RESPONSIVE VIDEO
 
-                  Mobile  → 45vh
-                  Small   → 55vh
-                  Tablet  → 70vh
-                  Desktop → 90vh
+                  This is the important part.
+
+                  The video ALWAYS stays 16:9:
+                  Mobile  → 16:9
+                  Tablet  → 16:9
+                  Laptop  → 16:9
+                  Desktop → 16:9
                   ================================================= */}
               <div
                 className="
                   relative
                   w-full
-
-                  h-[45vh]
-                  min-h-[240px]
-                  max-h-[420px]
-
-                  sm:h-[55vh]
-                  sm:min-h-[320px]
-                  sm:max-h-[600px]
-
-                  md:h-[70vh]
-                  md:min-h-[400px]
-                  md:max-h-[750px]
-
-                  lg:h-[90vh]
-                  lg:min-h-[600px]
-
+                  aspect-video
                   overflow-hidden
                   rounded-[20px]
                   sm:rounded-[24px]
